@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola Cola</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="tit-app txt-hide">Cola Cola</h1>
+        <section class="vending-machine">
+            <h2 class="txt-hide">vending machine display</h2>
+            <ul class="list-item">
+            </ul>
+            <div class="balance-return">
+                <div class="info-balance">
+                    <span class="txt-balance"></span>
+                </div>
+                <button type="button" class="btn-return">거스름돈 반환</button>
+            </div>
+            <div class="money-put">
+                <input type="number" class="inp-put" placeholder="입금액 입력">
+                <button type="button" class="btn-put">입금</button>
+            </div>
+            <div class="item-get">
+                <ul class="list-item-staged">
+                </ul>
+                <button type="button" class="btn-get">획득</button>
+            </div>
+        </section>
+
+        <section class="info-mine">
+            <h2 class="txt-hide">my information</h2>
+            <div class="money-mine">
+                <div class="info-money">
+                    <span class="txt-money"></span>
+                </div>
+            </div>
+            <div class="items-mine">
+                <ul class="list-item-staged">
+                </ul>
+                <span class="txt-total">총금액 : 9,000원</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
