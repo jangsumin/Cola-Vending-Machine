@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* font-size 값이 나누어 떨어지지 않아서 rem 단위 사용하지 않음. */
+* {
+    font-family: 'Noto Sans KR';
+}
+
+body {
+    background-color: #eae8fe;
+}
+
+/* CSS 작성 순은 가장 큰 구획을 기준으로 써내려감. */
+/* 전체 크기 따로 지정 안함. */
+#app {
+    display: flex;
+    flex-wrap: wrap; /* 모바일을 고려하여 컨텐츠가 다음 줄로 넘어갈 수 있도록 함. */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0 28px;
+    padding-top: 248px;
+}
+
+#app .vending-machine, #app .info-mine {
+    box-sizing: border-box;
+    width: 360px;
+    /* 굳이 height 속성을 지정해주지 않아도, 컨텐츠 길이를 이미 알고 있어서 상관없음. */
+    background-color: #fff;
+}
+
+#app .tit-app {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 386px; /* max-width 값을 정해주지 않으면 100%에 의해 뷰포트 전체 차지함. */
+    height: 180px;
+    background: no-repeat center / 100% 100% url(../images/Logo_img.png);
+}
+
+#app .vending-machine {
+    position: relative;
+    padding: 31px 27px 28px; /* 상, 우좌, 하 */
+}
+
+.vending-machine .list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /* 이미 균등한 간격을 두고 배치되어 있으므로 gap 속성을 적용하지 않아도 됨. */
+}
+
+.vending-machine .list-item li {
+    position: relative;
+    width: 30%;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.vending-machine .list-item .click-on::before {
+    /* display: block; */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    border: 3px solid #6327fe;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.vending-machine .list-item .sold-out::before {
+    /* display: block; */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 1;
+    border-radius: 10px;
+    background: no-repeat center / 58px 45px url(../images/Sold-out.png) rgba(0, 0, 0, 0.8);
+}
+
+.vending-machine .list-item li:nth-child(3) ~ li { /* 네번째 요소부터 끝 요소까지 */
+    margin-top: 12px;
+}
+
+.vending-machine .btn-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.vending-machine .list-item .img-item {
+    width: 36px;
+    height: 65px;
+    margin: 0 auto; /* 이미지는 margin 사용해서 가운데 정렬 가능함. */
+}
+
+.vending-machine .tit-item {
+    display: block;
+    font-size: 9px;
+    margin: 7px 0;
+}
+
+.vending-machine .txt-price{
+    font-size: 12px;
+    padding: 2px 12px;
+    background-color: #6327FE;
+    border-radius: 50px;
+    color: #fff;
+}
+
+
+
+.balance-return {
+
+}
+
+.info-balance {
+
+}
+
+.txt-balance {
+
+}
+
+.btn-return {
+
+}
+
+.money-put {
+
+}
+
+.inp-put {
+
+}
+
+.btn-put {
+
+}
+
+.item-get {
+
+}
+
+.list-item-staged {
+
+}
+
+.btn-get {
+
+}
