@@ -216,16 +216,16 @@ body {
     color: #fff;
 }
 
-#app .info-mine{
+#app .info-mine {
     background-color: #EAE8FE;
 }
 
-.info-mine .money-mine{
+.info-mine .money-mine {
     padding: 9px 27px;
     background-color: #fff;
 }
 
-.money-mine .info-money{
+.money-mine .info-money {
     padding: 6px 10px;
     font-size: 14px;
     line-height: 20px;
@@ -233,7 +233,7 @@ body {
     border-radius: 5px;
 }
 
-.info-money .txt-money{
+.info-money .txt-money {
     float: right;
     font-weight: 700;
 }
@@ -244,20 +244,20 @@ body {
     margin-left: 4px;
 }
 
-.info-mine .items-mine{
+.info-mine .items-mine {
     margin-top: 20px;
     padding: 30px 27px 32px;
     background: #fff;
 }
 
-.items-mine .tit-item{
+.items-mine .tit-item {
     display: block;
     text-align: center;
     margin-bottom: 14px;
     font-size: 14px;
     font-weight: 700;
 }
-.items-mine .list-item-staged{
+.items-mine .list-item-staged {
     overflow-y: scroll;
     height: 364px;
     padding: 12px 12px 0;
@@ -267,9 +267,15 @@ body {
     border-radius: 5px;
 }
 
-.items-mine .txt-total{
+.items-mine .txt-total {
     display: block;
     text-align: right;
     font-size: 12px;
     margin-top: 10px;
+}
+
+.items-mine .txt-total::after {
+    display: inline;
+    content: '원';
+    margin-left: 4px;
 }
