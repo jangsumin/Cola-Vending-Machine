@@ -16,3 +16,13 @@
     + dividing section with padding
     + listing selector for specificity
 ***
+### 10/5(수)
+* complete style.css
+* add lists in ul tag
+* I have struggled with
+    + using 'sans-serif' value
+    + keeping my own code-convention
+    + locating '.list-item-staged' in specific area
+    + naming class
+* Html Validator✅
+***
